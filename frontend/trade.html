@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade - CEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="wallets.html">Wallets</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Trade Cryptocurrency</h1>
+
+        <form id="trade-form">
+            <div>
+                <label for="transaction-type">Transaction Type</label>
+                <select id="transaction-type">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="wallet">Wallet</label>
+                <select id="wallet">
+                    <!-- Wallet options will be populated dynamically -->
+                </select>
+            </div>
+
+            <div>
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Amount to trade">
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div id="trade-result"></div>
+
+        <div id="trade-details">
+            <!-- Created trade cells will appear here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CEX - All Rights Reserved</p>
+    </footer>
+
+    <script src="script_t.js"></script>
+</body>
+</html>

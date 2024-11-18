@@ -1,0 +1,60 @@
+<!-- wallets.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallets - CEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trade.html">Trade</a></li>
+                <li><a href="wallets.html">Wallets</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Manage Wallets</h1>
+
+        <div class="wallet-actions">
+            <h2>Create Wallet</h2>
+
+            <!-- Dropdown for selecting cryptocurrency -->
+            <label for="crypto-select">Select Cryptocurrency:</label>
+            <select id="crypto-select">
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="XRP">Ripple (XRP)</option>
+                <option value="LTC">Litecoin (LTC)</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button id="create-hot-wallet">Create Hot Wallet</button>
+            <button id="create-cold-wallet">Create Cold Wallet</button>
+        </div>
+
+        <div class="wallet-list">
+            <h2>Your Wallets</h2>
+            <div id="wallets-list">
+                <!-- Wallets will be displayed here -->
+            </div>
+        </div>
+
+        <div id="action-result"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CEX - All Rights Reserved</p>
+    </footer>
+
+    <script src="script_w.js"></script>
+</body>
+</html>
